@@ -1,5 +1,4 @@
 class ReviewsController < ApplicationController
- class ReviewsController < ApplicationController
   before_filter :load_product
 
   def show
@@ -31,3 +30,4 @@ class ReviewsController < ApplicationController
     @product = Product.find(params[:product_id])
   end
 end
+
