@@ -1,10 +1,9 @@
 <h1><%= @product.name %></h1>
 <p><%= @product.description %></p>
 <p><%= @product.formatted_price %></p>
+<p> <%= link_to "Edit Product", edit_product_path %></p>
 
 <h3>Reviews</h3>
-
-  <p>Reviews for <%= @product.name %></p>
 
   <% @product.reviews.each do |review| %>
     <p>
@@ -45,3 +44,5 @@
 <% else %>
   <p>Please <%= link_to "log in", new_session_path %> to add a review.</p> 
 <% end %>
+
+<p> <%= link_to "Home Page", products_path %></p>
